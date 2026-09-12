@@ -451,3 +451,112 @@ body {
 .workspace-split.mod-left-split .workspace-tab-header-container {
   padding: 0 4px;
 }
+
+body {
+  --icon-m: 14px;
+  --icon-l: 16px;
+  --size-4-1: 3px;
+  --size-4-2: 6px;
+  --size-2-3: 5px;
+}
+
+.workspace-tab-header-inner-title {
+  font-size: 0.72em;
+}
+
+.status-bar {
+  font-size: 10px;
+  padding: 0 6px;
+}
+
+.side-dock-ribbon-action {
+  padding: 3px;
+}
+
+.callout[data-callout="abstract"] {
+  --callout-color: var(--ash-accent-rgb);
+  background: none;
+  border: none;
+  border-left: 1px solid rgba(var(--ash-accent-rgb), 0.35);
+  border-radius: 0;
+  padding: 0.25em 1.5em 0.25em 1.25em;
+  margin: 0 0 2.5em;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: var(--ash-quote);
+  mix-blend-mode: normal;
+}
+
+.callout[data-callout="abstract"] .callout-title {
+  padding: 0 0 0.35em;
+  gap: 0.4em;
+  color: var(--ash-faint);
+}
+
+.callout[data-callout="abstract"] .callout-icon {
+  display: none;
+}
+
+.callout[data-callout="abstract"] .callout-title-inner {
+  font-family: 'AshNav', 'AshBody', serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.callout[data-callout="abstract"] .callout-fold {
+  display: none;
+}
+
+.callout[data-callout="abstract"] .callout-content {
+  padding: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.callout[data-callout="abstract"] .callout-title {
+  pointer-events: none;
+  cursor: default;
+}
+
+.callout[data-callout="abstract"].is-collapsed .callout-content {
+  display: block !important;
+  height: auto !important;
+}
+
+.callout[data-callout="subtitle"] {
+  --callout-color: var(--ash-accent-rgb);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: -0.5em 0 2em;
+  mix-blend-mode: normal;
+}
+
+.callout[data-callout="subtitle"] .callout-title {
+  display: none;
+}
+
+.callout[data-callout="subtitle"] .callout-content {
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.15em;
+  line-height: 1.45;
+  color: var(--ash-muted);
+}
+
+.callout[data-callout="subtitle"] .callout-content p {
+  margin: 0;
+  text-align: center;
+}
+
+.internal-embed.image-embed img {
+  filter: sepia(20%) brightness(80%) contrast(120%);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.theme-light .internal-embed.image-embed img {
+  filter: sepia(40%) contrast(110%) brightness(90%);
+}
