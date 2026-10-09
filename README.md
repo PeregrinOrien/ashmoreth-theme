@@ -1,19 +1,45 @@
-# Ashmoreth
+<h1 align="center">Ashmoreth</h1>
 
-A dark and light theme for [Obsidian](https://obsidian.md) that makes notes look like a printed book: justified serif text, drop caps, § before section headings, double-rule blockquotes and an asterism (⁂) for `---`, etc
+<p align="center"><em>An Obsidian theme that makes your notes read like a printed book.</em></p>
+
+![Ashmoreth Theme Showcase (❁´◡`❁)](assets/showcase.png)
+
+Justified serif text, Subtitles and Abstracts, drop caps, § before section headings, double-rule blockquotes and an asterism (⁂) for `---`. It comes in two palettes and works offline, because every font is embedded.
+
+| | |
+|---|---|
+| **Dark** | gold on slate |
+| **Light** | brown ink on cream |
 
 ## Install
 
-Copy `manifest.json` and `theme.css` into `<vault>/.obsidian/themes/Ashmoreth/`, then pick **Ashmoreth** under *Settings → Appearance → Themes*.
+**From Obsidian** (once it's listed): *Settings → Appearance → Themes → Manage*, search for **Ashmoreth**, then click *Install and use*.
 
-## Light and dark
-
-- **Dark**: gold on slate
-- **Light**: brown ink on cream
+**By hand:** copy `manifest.json` and `theme.css` into `<vault>/.obsidian/themes/Ashmoreth/`, then pick **Ashmoreth** under *Settings → Appearance → Themes*.
 
 ## What it does
 
-Every h2 gets a § and its first paragraph opens with a gold drop cap (drop caps are reading view only). Blockquotes sit between two rules with a big quote mark, `---` becomes ⁂ and `==highlights==` turn into a marker underline. Tabs are narrower, the file explorer is smaller with folders in caps, and backlinks at the bottom of a note stay faded until you hover them.
+### Typography
+- Every **h2** gets a § and a rule under it. The first paragraph after it opens with a gold **drop cap** (reading view only).
+- The note title and h1 are set in Bodoni small caps, centred over a gold double rule.
+- h3 is italic. h4–h6 are in Cinzel caps.
+- Body text is justified and hyphenated, with old-style figures.
+
+### Blocks
+- **Blockquotes** sit between two rules with a hanging quote mark instead of the usual side bar.
+- `---` becomes **⁂**.
+- `==highlights==` become a marker underline instead of a filled block.
+- Tables get Cinzel headers and thin ruled cells.
+
+### Interface
+- Narrower tabs, with a gold line under the active one.
+- A smaller file explorer, with folders in caps and a gold bar on the open note.
+- Backlinks at the bottom of a note stay faded until you hover over them.
+
+<p align="center">
+  <img src="assets/light-body.png" width="49%" alt="Headings, blockquote and table in light mode">
+  <img src="assets/dark-body.png" width="49%" alt="Headings, table, code, tasks and callout in dark mode">
+</p>
 
 ## Extra callouts
 
@@ -25,15 +51,23 @@ Every h2 gets a § and its first paragraph opens with a gold drop cap (drop caps
 > A short summary, always expanded, with a thin gold rule on the left.
 ```
 
+`[!note]` callouts get a gold title and icon. Other callout types keep Obsidian's own colours.
+
 ## Tweaking
 
-- **UI sizes** ([theme.css:441](theme.css#L441)): this is my personal setting and it looks good on my screen, but I tested it on smaller screens and it might be too small for some people. Tweak it, or delete the whole block to get Obsidian's normal sizes back.
-- **Sync icons** ([theme.css:554](theme.css#L554)): off by default. If you use Obsidian Sync and don't want the icons, remove the comment around the block. I just don't like how they look.
-- **Fading backlinks** ([theme.css:583](theme.css#L583)): delete this block if you think that's bloat.
+Everything you'd want to change is grouped and commented in `theme.css`:
+
+| What | Where | Default |
+|---|---|---|
+| UI sizes (text, icons, tabs, bars) | the **WORKSPACE** block | Smaller than stock Obsidian. Delete the block to get the normal sizes back. |
+| Hide Obsidian Sync icons | the **hide sync icons** block | Off. Uncomment the block to turn it on. |
+| Fading backlinks | the **hovermaxxing** block | On. Delete the block to turn it off. |
+
+> The UI sizes suit my screen but can feel small on laptops, so adjust them to taste.
 
 ## Fonts
 
-All fonts are embedded so the theme works offline, and all of them are free to redistribute. See [FONTS.md](FONTS.md).
+All fonts are embedded and free to redistribute. See [FONTS.md](FONTS.md).
 
 | CSS name | Font | Used for |
 |---|---|---|
@@ -44,4 +78,4 @@ All fonts are embedded so the theme works offline, and all of them are free to r
 
 ## Licence
 
-Theme code: MIT, see [LICENSE](LICENSE). Fonts: see [FONTS.md](FONTS.md).
+Theme code: MIT, see [LICENSE](LICENSE). Fonts: OFL / MIT, see [FONTS.md](FONTS.md).
