@@ -20,7 +20,7 @@ Justified serif text, Subtitles and Abstracts, drop caps, § before section head
 ## What it does
 
 ### Typography
-- Every **h2** gets a § and a rule under it. The first paragraph after it opens with a gold **drop cap** (reading view only).
+- Every **h2** gets a § and a rule under it. The first paragraph after it opens with a gold **drop cap** (it's reading view only).
 - The note title and h1 are set in Bodoni small caps, centred over a gold double rule.
 - h3 is italic. h4–h6 are in Cinzel caps.
 - Body text is justified and hyphenated, with old-style figures.
@@ -59,11 +59,11 @@ Everything you'd want to change is grouped and commented in `theme.css`:
 
 | What | Where | Default |
 |---|---|---|
-| UI sizes (text, icons, tabs, bars) | the **WORKSPACE** block | Smaller than stock Obsidian. Delete the block to get the normal sizes back. |
+| UI sizes (text, icons, tabs, bars) | the **WORKSPACE** block | Smaller than stock Obsidian. Delete the whole block to get the normal sizes back. |
 | Hide Obsidian Sync icons | the **hide sync icons** block | Off. Uncomment the block to turn it on. |
-| Fading backlinks | the **hovermaxxing** block | On. Delete the block to turn it off. |
+| Fading backlinks | the **hovermaxxing** block | On. Delete the block to turn it off(if you think it's bloat) |
 
-> The UI sizes suit my screen but can feel small on laptops, so adjust them to taste.
+> The UI sizes suit my screen but can feel small on laptops and es. tablets, so adjust them to taste.
 
 ## Fonts
 
